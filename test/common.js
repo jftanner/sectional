@@ -35,3 +35,8 @@ export function stubNano() {
     const Nano = stub(connect, 'Nano').returns(nano);
     return { Nano, nano };
 }
+export function stubRedis(){
+    const redis = stub();
+    stub(connect, 'Redis').returns(redis);
+    return redis;
+}
