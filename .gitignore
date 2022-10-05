@@ -1,0 +1,16 @@
+# Logs
+*.log
+logs
+
+# Coverage
+coverage
+
+# Dependencies
+node_modules/
+
+# Secrets
+.env*
+.npmrc
+
+# Local data
+/dbdata

@@ -1,0 +1,51 @@
+{
+  "name": "sectional",
+  "version": "0.0.0-semantic-release.0",
+  "description": "A database interface that combines the power of CouchDB and the speed of Redis caching.",
+  "type": "module",
+  "exports": {
+    ".": "./lib/index.js",
+    "./*": "./lib/interfaces/*.js"
+  },
+  "scripts": {
+    "test": "c8 mocha",
+    "demo": "node ./demo.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jftanner/sectional.git"
+  },
+  "keywords": [
+    "couchdb",
+    "redis",
+    "cache",
+    "database"
+  ],
+  "author": "James Tanner-McLeod <james.tanner@tanndev.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jftanner/sectional/issues"
+  },
+  "homepage": "https://github.com/jftanner/sectional#readme",
+  "devDependencies": {
+    "c8": "7.12.0",
+    "chai": "4.3.6",
+    "chai-as-promised": "7.1.1",
+    "chance": "1.1.8",
+    "mocha": "10.0.0",
+    "sinon": "14.0.1",
+    "sinon-chai": "3.7.0"
+  },
+  "peerDependencies": {
+    "ioredis": "5.2.3",
+    "nano": ">=10.0.0"
+  },
+  "peerDependenciesMeta": {
+    "nano": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "pluralize": "8.0.0"
+  }
+}
